@@ -5,13 +5,10 @@
 
 ## 🚀 Creación del Proyecto Paso a Paso
 
-### 1️⃣ Crear un nuevo proyecto Web API en .NET
-```sh
-dotnet new webapi -n MiApiCrud
-cd MiApiCrud
-```
+### 1️⃣ Crear un nuevo proyecto ASP.NET Core Web API
 
-### 2️⃣ Agregar Entity Framework Core y el proveedor de SQL Server
+
+### 2️⃣ Agregar Entity Framework Core  -  SQL Server -  Tools  - Design
 ```sh
 dotnet add package Microsoft.EntityFrameworkCore
 
@@ -24,7 +21,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 Crea una carpeta `Models` y dentro un archivo `Producto.cs`:
 
 ```csharp
-namespace MiApiCrud.Models;
+
 
 public class Producto
 {
@@ -56,7 +53,10 @@ Edita `appsettings.json` y agrega la conexión:
 
 ```json
 "ConnectionStrings": {
+    "DefaultConnection": "Server=DESKTOP-U0C9MEA\\SQLEXPRESS; Database=microserviciosDB; Trusted_Connection=True; TrustServerCertificate=True"
+
   "DefaultConnection": "Server=localhost;Database=MiApiDb;User Id=sa;Password=TuContraseña;"
+
 }
 ```
 
