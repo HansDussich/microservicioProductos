@@ -151,3 +151,34 @@ Puedes probar los endpoints en **Postman** o desde la línea de comandos:
 ![image](https://github.com/user-attachments/assets/86775532-ed84-4a47-b823-aad399c74501)
 
 
+---------------------------
+# Store Procedures SP
+
+```sh
+CREATE PROCEDURE ConsultarProductos
+AS
+BEGIN
+    SELECT * FROM Productos;
+END;
+```
+
+```sh
+
+CREATE PROCEDURE EliminarProducto
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Productos WHERE Id = @Id;
+END;
+```
+
+```sh
+CREATE PROCEDURE ObtenerUltimos5Productos
+AS
+BEGIN
+    SELECT TOP 5 * FROM Productos ORDER BY Id DESC;
+END;
+```
+
+
+
