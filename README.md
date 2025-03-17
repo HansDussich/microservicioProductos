@@ -181,4 +181,12 @@ END;
 ```
 
 
+Para Agregar los SP a ASP.Net
+1.en el contexto de la base de datos AppDbContext
+![image](https://github.com/user-attachments/assets/e290532e-477a-46ad-986c-ad695a94ad54)
+2. En el controllador
+![image](https://github.com/user-attachments/assets/8b0e9537-1bfb-4873-9940-4265e293ae59)
+![image](https://github.com/user-attachments/assets/6c8bebe5-34f8-456c-8f16-6aa59beeb9a2)
+
+
 
