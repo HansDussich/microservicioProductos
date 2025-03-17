@@ -8,16 +8,8 @@
 ### 1️⃣ Crear un nuevo proyecto ASP.NET Core Web API
 
 
-### 2️⃣ Agregar Entity Framework Core  -  SQL Server -  Tools  - Design
-```sh
-dotnet add package Microsoft.EntityFrameworkCore
+### 2️⃣ Agregar paquetes NuGEt Entity Framework Core  -  SQL Server -  Tools  - Design TIENE QUE SER DE LA MISMA VERSION QUE .NET 
 
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-
-dotnet add package Microsoft.EntityFrameworkCore.Tools
-
-DEsign  - version 
-```
 
 ### 3️⃣ Crear el modelo de datos
 Crea una carpeta `Models` y dentro un archivo `Producto.cs`:
@@ -92,6 +84,14 @@ app.UseAuthorization();
 app.MapControllers();
 app.Run();
 ```
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet aspnet-codegenerator controller -name ProductosController -async -api -m Producto -dc AppDbContext -outDir Controllers
+
+
 
 ### 7️⃣ Crear la base de datos con Entity Framework
 ```sh
