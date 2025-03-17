@@ -135,3 +135,19 @@ Puedes probar los endpoints en **Postman** o desde la línea de comandos:
   ```sh
   curl -X POST http://localhost:5000/api/productos -H "Content-Type: application/json" -d '{"nombre":"Laptop", "precio": 999.99}'
   ```
+
+
+  -----------------------------
+
+
+  ![image](https://github.com/user-attachments/assets/6f33323a-798a-44f9-9331-4561eccaba69)
+
+![image](https://github.com/user-attachments/assets/57f3b6cc-3518-441d-8bc0-737aeaa124ad)
+
+![image](https://github.com/user-attachments/assets/d619ec68-b6a4-40c2-ad7c-dc51c8d08456)
+
+![image](https://github.com/user-attachments/assets/170f9084-777e-4614-9ebc-d037684d23ac)
+
+![image](https://github.com/user-attachments/assets/86775532-ed84-4a47-b823-aad399c74501)
+
+
